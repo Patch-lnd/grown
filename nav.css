@@ -1,0 +1,63 @@
+nav ul li{
+    display: inline;
+    font-size: larger;
+    /*background-color: brown;*/
+    justify-content: center;
+    padding-right: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #1c2833;
+    padding: 2px 2px 2px 2px;
+}
+nav ul .nav-space li a:hover{
+
+    box-shadow: 1px 5px 9px 1px #000;
+    background: transparent;
+    border-radius: 10px;
+/* 
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 5px; */
+}
+nav ul li svg:first-child{
+    padding-left: 10px;
+}
+nav ul li svg{
+    transition: transform .2s; /* Animation */
+}
+nav ul li a svg:hover{
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #f2f4f6;
+}
+/* Code to add a vertical separation line at hte last element of a navbar  */
+/* :nth-child(4n) will apply the code within it to every child index corresponding 
+to the formula 4 x n++ -> 4x1, 4x2, ect... */
+nav ul li:nth-child(4n){
+    border-right: 2px solid rgb(74, 53, 50);
+}
+
+nav ul{
+    background-color:#7d9073; /* #788a6e  #495542 */
+    padding: 15px 15px;
+    width: 600px;
+    border-radius: 30px;
+    /* Centering ul text in the Navbar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Fixing navbar to the top*/
+    position: fixed;
+    top:0;
+}
+nav{
+    /* Les 3 lignes de codes suivantes sonts pour centrer un element en CSS */
+   /* Centering Navbar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}

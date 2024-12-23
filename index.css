@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+.container h2{
+   text-decoration: underline;
+   text-decoration-color: brown;
+   text-decoration-thickness: 4px;
+   margin-left: 25px;
+}
+.main h2{
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-decoration-thickness: 4px;
+    margin-left: 25px;
+}
+/* .main is the princiâl content of the index page, here were a altering its position relative to the fixed top navbar*/
+.main{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.catalogue img .emoji{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.catalogue img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 68%;
+    height: 92%;
+    border-radius: 10px;
+}
+.catalogue{
+    display: flex;
+    flex-flow: column wrap;
+}
+.catalogue_1{
+    .picture{
+        width: 70%;
+        img{
+        box-shadow:  0 5px 5px #7b8c87;
+        }
+    }
+    .text{
+        width: 30%;
+    }
+}
+button{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: brown;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+/* button:hover{
+    background-color:  #680707;
+} */
+.btn-1{
+    box-shadow: inset 0 0 0 0 #680707;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+.btn-1:hover{
+    box-shadow: inset 150px 0 0 0 #70c5bd /*#02cf91d0*/;
+    color: black;
+}
+.catalogue_1{
+    display: flex;
+    width: 70%;
+    height: auto;
+}
+.pub_perso{
+    border: solid #495542;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    padding-left:15px ;
+    padding-bottom: 15px;
+    width: 60%;
+   text-align: center;
+}
+.pub_perso .perso_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pub_perso .perso_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.catalogue .pub_perso button{
+    align-items: center;
+    justify-content: center;
+}
+span .green{
+    color: #495542;
+}
+.catalogue h2{
+    align-items: center;
+    justify-content: center;
+}
+/* FOR Debugging purposes*/
+/* .catalogue{
+    border: solid black;
+}
+.catalogue_1{
+    border: solid black;
+    padding: 10px 10px 10px 10px;
+}
+.picture{
+    border: solid black;
+}
+.text{
+    border: solid  black;
+    padding-left: 16px;
+    padding-right: 16px;
+
+} */
+/* END OF CODE DEBUG */
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catalogue h2{
+    display: flex;
+}
+.catalogue_1 .picture a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   margin-right: 35px;
+   transition: transform .8s; /* Animation */
+}
+.button a{
+    text-decoration: none;
+}
+.perso_2 a{
+    text-decoration: none;
+}
+.catalogue_1 .picture a:hover{
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.title h2{
+    text-decoration-line: none;
+    color: #7B8C87;
+    text-align: center;
+    font-family: 'cursive','lucida handwriting';
+
+}
+.title{
+    margin-top: 30px;
+    display: flex;
+    background-color: #1c4036;
+    text-wrap: wrap;
+    flex-flow: column;
+    width: 25%;
+    height: 35%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 9px;
+    /* position :relative; causes issues with sticky navbars */
+    position: relative;
+}
+.title p{
+    text-align: center;
+    font-size: larger;
+}.title .span-1{
+    color: #95BFAC;
+    font-family: 'cursive','lucida handwriting';
+}
+.title .span-2{
+    color: #F2F2F2;
+    font-family: 'cursive','lucida handwriting';
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.title::after, .title::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient( from var(--angle),transparent 25%,25%,/* #95BFAC */  #4189A6, #590202, #8C5535, #4189A6,#D9AB91);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    border-radius: 9px;
+    animation: 3s spin linear infinite;
+}
+.title::before{
+    --angle:0;
+    filter: blur(1.5rem);
+    opacity: 0.9;
+}
+.block{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }to{
+        --angle:360deg;
+    }
+}
+

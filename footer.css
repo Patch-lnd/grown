@@ -1,0 +1,44 @@
+/* Setting basic general structures of the footer*/
+footer{
+    background-color:#467061  /*#357960  #01510d8f  */;
+    font-size: larger;
+    /* Filling in the auto margin spacing given by the web browser */
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* Giving space to the left of our footer's whole block content structure*/
+footer .content{
+    padding-left: 15px;
+}
+/* Giving space to the left of our footer's content link elements to space the menu*/
+footer .content a{
+    padding-right: 15px;
+}
+/* Altering the images in our footer's content*/
+footer .content a img{
+    border-radius: 5px;
+    width: 90px;
+}
+/* .social is all our social media links(icons). Here we are applying a top gap and an annimation*/
+footer .social{
+    margin-top: 9px;
+    transition: transform .8s; /* Animation */
+}
+footer .social img:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* Altering the color of the footer links information only */
+.content_link a{
+    color: #212f3d;
+}
+.copyright{
+    padding-top: 20px;
+    text-align: center;
+}
+.copyright hr{
+    border-color:  whitesmoke;
+    width: 80%;
+}
