@@ -41,7 +41,8 @@ nav ul li:nth-child(4n){
 nav ul{
     background-color:#7d9073; /* #788a6e  #495542 */
     padding: 15px 15px;
-    width: 600px;
+    width:  35%;
+    min-width: 320px;
     border-radius: 30px;
     /* Centering ul text in the Navbar*/
     display: flex;
